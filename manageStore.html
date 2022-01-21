@@ -53,6 +53,77 @@
         </div>
     </nav>
 </section>
+<section class="container-fluid pe-5 ps-5">
+    <section class="row pe-4 ps-4 ">
+        <h2 class="shadow"><i class="fas fa-boxes"></i></i>Items</h2>
+        <h5 class="fs-6 fw-normal ">Home > Items</h5>
+        <hr>
+        <div class="col-4 shadow-lg  mb-4  bg-body border rounded  border-2 me-5 mt-3 ">
+            <form class="row g-3">
+                <div id="searchFormHeader" class="col-12 text-white">Item Search</div>
+                <div class="col-md-12">
+                    <input type="email" class="form-control" id="inputNameNICTp" placeholder="Input Item Name/Code Here">
+                </div>
+                <div class="col-2" >
+                    <button class="btn btn-sm btn-success me-2" type="button">Search</button>
+                </div>
+                <div class="col-4">
+                    <select id="inputCustomer" class="form-select">
+                        <option selected>Name</option>
+                        <option>Hansi</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="col-4">
+            <button class="btn btn-sm btn-primary me-2 mt-4" type="button">New Item</button>
+            <button class="btn btn-sm btn-warning me-2 mt-4" type="button">View All Items</button>
+        </div>
+        <div>
+            <button class="btn btn-sm btn-danger me-2 mb-4" type="button">Delete</button>
+            <button class="btn btn-sm btn-primary me-2 mb-4" type="button">Details</button>
+            <button class="btn btn-sm btn-success me-2 mb-4" type="button">Clear</button>
+        </div>
+        <div class=" shadow-lg">
+            <table class="table table-bordered table-hover">
+                <thead id="tHead" class="text-white">
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Age</th>
+                    <th>Tp</th>
+                    <th>Salary</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="table-hover fw-light">
+                    <th>C001</th>
+                    <th>Hansi</th>
+                    <th>Matara</th>
+                    <th>100000.00</th>
+                </tr>
+                <tr class="table-hover fw-light">
+                    <th>C002</th>
+                    <th>Nirasha</th>
+                    <th>Galle</th>
+                    <th>200000.00</th>
+                </tr>
+                <tr class="table-hover fw-light">
+                    <th>C003</th>
+                    <th>Chamodi</th>
+                    <th>Galle</th>
+                    <th>100000.00</th>
+                </tr>
+                <tr class="table-hover fw-light">
+                    <th>C004</th>
+                    <th>Milasha</th>
+                    <th>Mirissa</th>
+                    <th>200000.00</th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</section>
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
