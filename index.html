@@ -13,6 +13,11 @@
         .nav-item:hover{
             font-weight: bolder;
         }
+        #formHeader{
+            background: #2ecc71;
+            height: 50px;
+
+        }
     </style>
 </head>
 <body>
@@ -61,49 +66,41 @@
 <section class="row pe-5 ps-5">
     <h5 class="fs-6 fw-normal">Home > Orders</h5>
     <hr>
-        <div class="col shadow-lg p-3 mb-5  bg-body border rounded  border-2 me-5 mt-3 ">
+        <div class="col shadow-lg  mb-5  bg-body border rounded  border-2 me-5 mt-3 ">
             <form class="row g-3">
+                <div id="formHeader" class="col-12 text-white">Invoice Details</div>
                 <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4">
-                </div>
-                <div class="col-12">
-                    <label for="inputAddress" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                </div>
-                <div class="col-12">
-                    <label for="inputAddress2" class="form-label">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    <label for="inputOrderID" class="form-label">Order ID :</label>
+                    <input type="email" class="form-control" id="inputOrderID" placeholder="D001">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputCity" class="form-label">City</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <label for="inputDate" class="form-label">Date :</label>
+                    <input type="password" class="form-control" id="inputDate" placeholder="21/01/2022">
                 </div>
-                <div class="col-md-4">
-                    <label for="inputState" class="form-label">State</label>
+                <div class="col-6">
+                    <label for="inputState" class="form-label">Customer :</label>
                     <select id="inputState" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
+                        <option selected>C001</option>
+                        <option>C002</option>
+                        <option>C003</option>
+                        <option>C004</option>
                     </select>
                 </div>
-                <div class="col-md-2">
-                    <label for="inputZip" class="form-label">Zip</label>
-                    <input type="text" class="form-control" id="inputZip1">
+                <div class="col-6">
+                    <label for="inputAddress2" class="form-label">Customer ID :</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="C001">
+                </div>
+                <div class="col-6">
+                    <label for="inputCity" class="form-label">Name :</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Hansi">
+                </div>
+                <div class="col-6">
+                    <label for="inputCity" class="form-label">Salary :</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="100000.00">
                 </div>
                 <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck1">
-                        <label class="form-check-label" for="gridCheck">
-                            Check me out
-                        </label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    <label for="inputZip" class="form-label">Address :</label>
+                    <input type="text" class="form-control" id="inputZip1" placeholder="Matara">
                 </div>
             </form>
         </div>
