@@ -15,3 +15,10 @@
 
 ## POS System
 #### This is my very first Web Application.
+
+### Technologies used
+#### Languages
+- Html
+- CSS
+#### Frameworks
+- Bootstrap
