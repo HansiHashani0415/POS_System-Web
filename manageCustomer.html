@@ -10,6 +10,15 @@
   <meta name="theme-color" content="#3498db">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/Fonts/css/all.css">
+  <style>
+    #searchFormHeader{
+      background: #2ecc71;
+      height: 55px;
+    }
+    #tHead{
+      background: #1abc9c;
+    }
+  </style>
 </head>
 <body>
 <section>
@@ -53,109 +62,29 @@
     </div>
   </nav>
 </section>
-<section class="container-fluid">
+<section class="container-fluid pe-5 ps-5">
   <section class="row pe-4 ps-4">
-    <h2><i class="fas fa-users"></i>Customer</h2>
-    <h5 class="fs-6 fw-normal mt-3">Home > Customer</h5>
+    <h2 class="shadow"><i class="fas fa-users"></i>Customer</h2>
+    <h5 class="fs-6 fw-normal ">Home > Customer</h5>
     <hr>
-    <div class="col-3 shadow-lg  mb-4  bg-body border rounded  border-2 me-5 mt-3 ">
+    <div class="col-4 shadow-lg  mb-4  bg-body border rounded  border-2 me-5 mt-3 ">
       <form class="row g-3">
-        <div id="invoiceFormHeader" class="col-12 text-white">Invoice Details</div>
-        <div class="col-md-6">
-          <label for="inputOrderID" class="form-label">Order ID :</label>
-          <input type="email" class="form-control" id="inputOrderID" placeholder="D001">
+        <div id="searchFormHeader" class="col-12 text-white">Customer Search</div>
+        <div class="col-md-12">
+          <input type="email" class="form-control" id="inputNameNICTp" placeholder="Input Name/NIC/Tp Here">
         </div>
-        <div class="col-md-6">
-          <label for="inputDate" class="form-label">Date :</label>
-          <input type="password" class="form-control" id="inputDate" placeholder="21/01/2022">
-        </div>
-        <div class="col-6">
-          <label for="inputCustomer" class="form-label">Customer :</label>
-          <select id="inputCustomer" class="form-select">
-            <option selected>C001</option>
-            <option>C002</option>
-            <option>C003</option>
-            <option>C004</option>
-          </select>
-        </div>
-        <div class="col-6">
-          <label for="inputCustomerID" class="form-label">Customer ID :</label>
-          <input type="text" class="form-control" id="inputCustomerID" placeholder="C001">
-        </div>
-        <div class="col-6">
-          <label for="inputName" class="form-label">Name :</label>
-          <input type="text" class="form-control" id="inputName" placeholder="Hansi">
-        </div>
-        <div class="col-6">
-          <label for="inputSalary" class="form-label">Salary :</label>
-          <input type="text" class="form-control" id="inputSalary" placeholder="100000.00">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">Address :</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="Matara">
-        </div>
-      </form>
-    </div>
-    <div class="col-5 shadow-lg  mb-4  bg-body border rounded  border-2 me-5 mt-3 ">
-      <form class="row g-3">
-        <div id="itemFormHeader" class="col-12 text-white">Item Select</div>
-        <div class="col-md-6">
-          <label for="inputItem" class="form-label">Item :</label>
-          <select id="inputItem" class="form-select">
-            <option selected>P001</option>
-            <option>P002</option>
-            <option>P003</option>
-            <option>P004</option>
-          </select>
-        </div>
-        <div class="col-md-6">
-          <label for="inputItemCode" class="form-label">Item Code :</label>
-          <input type="password" class="form-control" id="inputItemCode" placeholder="P001">
-        </div>
-        <div class="col-5">
-          <label for="inputItemName" class="form-label">Item Name :</label>
-          <input type="email" class="form-control" id="inputItemName" placeholder="Keerisamba 5kg">
+        <div class="col-2" >
+          <button class="btn btn-sm btn-success me-2" type="button">Search</button>
         </div>
         <div class="col-4">
-          <label for="inputPrice" class="form-label">Price :</label>
-          <input type="text" class="form-control" id="inputPrice" placeholder="525.00">
-        </div>
-        <div class="col-3">
-          <label for="inputQtyOnHand" class="form-label">QtyOnH :</label>
-          <input type="text" class="form-control" id="inputQtyOnHand" placeholder="200">
-        </div>
-        <div class="col-12">
-          <label for="inputOrderQty" class="form-label">Order Qty :</label>
-          <input type="text" class="form-control" id="inputOrderQty" placeholder="2">
-        </div>
-        <div class="col-12">
-          <button class="btn btn-sm btn-danger me-2" type="button">Add Item</button>
+          <select id="inputCustomer" class="form-select">
+            <option selected>Name</option>
+            <option>Hansi</option>
+          </select>
         </div>
       </form>
     </div>
-    <div class="col-3 shadow-lg p-3 mb-4  bg-body border rounded  border-2 mt-3  ">
-      <form class="row g-3">
-        <div>
-          <h3 class="text-primary">Total : 1050 Rs/=</h3>
-          <h3 class="text-danger">SubTotal : 945 Rs/=</h3>
-        </div>
-        <div class="col-md-6">
-          <label for="inputCash" class="form-label">Cash</label>
-          <input type="email" class="form-control" id="inputCash" placeholder="5000">
-        </div>
-        <div class="col-md-6">
-          <label for="inputDiscount" class="form-label">Discount</label>
-          <input type="password" class="form-control" id="inputDiscount" placeholder="10">
-        </div>
-        <div class="col-12">
-          <label for="inputBalance" class="form-label">Balance</label>
-          <input type="text" class="form-control" id="inputBalance" placeholder="4055">
-        </div>
-        <div class="col-12">
-          <button  id="purchaseBtn" type="submit" class="btn btn-sm btn-success">Purchase</button>
-        </div>
-      </form>
-    </div>
+
     <div class=" shadow-lg">
       <table class="table table-bordered table-hover">
         <thead id="tHead" class="text-white">
