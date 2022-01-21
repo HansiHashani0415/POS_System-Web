@@ -10,7 +10,7 @@
     <meta name="theme-color" content="#3498db">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <style>
-        .f:hover {
+        .nav-item:hover{
             font-weight: bolder;
         }
     </style>
@@ -23,19 +23,19 @@
                 <img src="assets/images/u.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
                 Uresha POS System
             </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse text-primary" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item f ">
-                        <a class="nav-link" href="#">Home</a>
+                    <li class="nav-item  ">
+                        <a class="nav-link text-primary" href="#">Home</a>
                     </li>
-                    <li class="nav-item f">
-                        <a class="nav-link" href="#">Orders</a>
+                    <li class="nav-item ">
+                        <a class="nav-link text-primary " href="#">Orders</a>
                     </li>
-                    <li class="nav-item f">
-                        <a class="nav-link" href="#">Items</a>
+                    <li class="nav-item ">
+                        <a class="nav-link text-primary" href="#">Items</a>
                     </li>
-                    <li class="nav-item dropdown f">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button"
                            data-bs-toggle="dropdown" aria-expanded="false">
                             Others
                         </a>
@@ -60,22 +60,162 @@
 <section class="row">
     <h5 class="fs-6 fw-normal">Home > Orders</h5>
     <hr>
-    <div class="col">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusamus delectus deserunt dignissimos eaque
-            eum, fugit impedit iste mollitia nesciunt officia officiis placeat recusandae sit unde voluptas voluptates?
-            Tenetur?</p>
+    <div class="col ms-4 border-5 shadow-lg">
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip1">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </form>
     </div>
-    <div class="col"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusamus delectus deserunt
-        dignissimos eaque
-        eum, fugit impedit iste mollitia nesciunt officia officiis placeat recusandae sit unde voluptas voluptates?
-        Tenetur?</p></div>
-    <div class="col"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusamus delectus deserunt
-        dignissimos eaque
-        eum, fugit impedit iste mollitia nesciunt officia officiis placeat recusandae sit unde voluptas voluptates?
-        Tenetur?</p></div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusamus delectus deserunt dignissimos eaque
-        eum, fugit impedit iste mollitia nesciunt officia officiis placeat recusandae sit unde voluptas voluptates?
-        Tenetur?</p>
+    <div class="col ms-4 border-5 shadow-lg">
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </form>
+    </div>
+    <div class="col ms-4 border-5 shadow-lg">
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </form>
+    </div>
+    <div class="m-5">
+        <table class="table">
+            <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-hover">
+                <th>0001</th>
+                <th>Hansi</th>
+                <th>Matara</th>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </section>
 
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
