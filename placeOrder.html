@@ -14,15 +14,16 @@
         .nav-item:hover{
             font-weight: bolder;
         }
-        /*#invoiceFormHeader{
+        #invoiceFormHeader{
             background: #2ecc71;
-            height: 55px;
-        }*/
+        }
         #itemFormHeader{
             background: #2ecc71;
-            height: 58px;
         }
         #purchaseBtn{
+            background:#2ecc71;
+        }
+        #addBtn{
             background:#2ecc71;
         }
         /*#tHead{
@@ -82,7 +83,7 @@
     <hr>
     <div class="col-3 shadow-lg  mb-4  bg-body border rounded  border-2 me-5 mt-3 p-3 ">
             <form class="row g-3">
-                <div class="col-12 text-white text-center p-2 fw-bolder fs-5 mt-2 rounded bg-primary">Invoice Details</div>
+                <div id="invoiceFormHeader" class="col-12 text-white text-center p-2 fw-bolder fs-5 mt-2 rounded ">Invoice Details</div>
                 <div class="col-md-6">
                     <label for="inputOrderID" class="form-label">Order ID :</label>
                     <input type="email" class="form-control" id="inputOrderID" placeholder="D001">
@@ -120,7 +121,7 @@
         </div>
     <div class="col-5 shadow-lg  mb-4  bg-body border rounded  border-2 me-5 mt-3 p-3">
         <form class="row g-3">
-            <div class="col-12 text-white text-center p-2 fw-bolder fs-5 mt-2 rounded bg-primary">Select Item</div>
+            <div id="itemFormHeader" class="col-12 text-white text-center p-2 fw-bolder fs-5 mt-2 rounded ">Select Item</div>
             <div class="col-md-6">
                 <label for="inputItem" class="form-label">Item :</label>
                 <select id="inputItem" class="form-select">
@@ -151,7 +152,7 @@
                 <input type="text" class="form-control" id="inputOrderQty" placeholder="2">
             </div>
             <div class="col-12" >
-                <button class="btn btn-sm btn-danger me-2" type="button">Add Item</button>
+                <button id="addBtn" class="btn btn-sm text-white fw-bolder me-2" type="button">Add Item</button>
             </div>
         </form>
     </div>
