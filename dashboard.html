@@ -50,7 +50,28 @@
   </div>
     <div class="col-4 border border-primary ">
       <h3 class="text-center mt-3">Items</h3>
-      <button  type="submit" class="btn btn bg-primary text-white col-12 mt-4 fw-bolder">Add New Item</button>
+      <div>
+        <button type="button" class="col-12 btn btn btn-primary fw-bolder mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Add New Item
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-primary" id="exampleModalLabel">Add New Item</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="col-2 btn btn-danger " data-bs-dismiss="modal">Clear</button>
+                <button type="button" class="col-3 btn btn-primary">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <button  type="submit" class="btn btn text-white bg-warning col-12 mt-4 fw-bolder">Update/ View Details</button>
     </div>
     <div class="col-4 border border-primary ">
