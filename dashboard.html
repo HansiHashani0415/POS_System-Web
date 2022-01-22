@@ -22,6 +22,12 @@
       top: 0;
       bottom: 0;
     }
+    body>section:nth-child(2)>section>div{
+      height: 300px;
+      width: 300px;
+      border-radius: 10px;
+      padding: 20px;
+    }
   </style>
 </head>
 <body>
@@ -35,19 +41,22 @@
     </div>
   </nav>
 </section>
-<section class="container-fluid">
-  <section id="content" class="row border rounded border-primary ">
+<section class="container-fluid flex-wrap">
+  <section id="content" class="row  justify-content-between">
   <div class="col-4 border border-primary ">
-    <button  type="submit" class="btn btn bg-primary text-white col-12 fw-bolder">Add New Customer</button>
-    <button  type="submit" class="btn btn text-white bg-warning col-12 fw-bolder">Update/ View Details</button>
+    <h3 class="text-center mt-3">Customers</h3>
+    <button  type="submit" class="btn btn bg-primary text-white col-12 mt-4 fw-bolder">Add New Customer</button>
+    <button  type="submit" class="btn btn text-white bg-warning col-12 mt-4 fw-bolder">Update/ View Details</button>
   </div>
     <div class="col-4 border border-primary ">
-      <button  type="submit" class="btn btn bg-primary text-white col-12 fw-bolder">Add New Item</button>
-      <button  type="submit" class="btn btn text-white bg-warning col-12 fw-bolder">Update/ View Details</button>
+      <h3 class="text-center mt-3">Items</h3>
+      <button  type="submit" class="btn btn bg-primary text-white col-12 mt-4 fw-bolder">Add New Item</button>
+      <button  type="submit" class="btn btn text-white bg-warning col-12 mt-4 fw-bolder">Update/ View Details</button>
     </div>
     <div class="col-4 border border-primary ">
-      <button  id="purchaseBtn" type="submit" class="btn btn bg-primary col-12 text-white fw-bolder">Purchase Order</button>
-      <button  type="submit" class="btn btn text-white bg-warning col-12 fw-bolder">Update/ View Details</button>
+      <h3 class="text-center mt-3">Orders</h3>
+      <button  id="purchaseBtn" type="submit" class="btn btn bg-primary mt-4 col-12 text-white fw-bolder">Purchase Order</button>
+      <button  type="submit" class="btn btn text-white bg-warning col-12 mt-4 fw-bolder">Update/ View Details</button>
     </div>
   </section>
 </section>
