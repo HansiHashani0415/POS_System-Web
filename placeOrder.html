@@ -25,9 +25,9 @@
         #purchaseBtn{
             background:#2ecc71;
         }
-        #tHead{
-            background: #1abc9c;
-        }
+        /*#tHead{
+            background: #3498db;
+        }*/
     </style>
 </head>
 <body>
@@ -80,7 +80,7 @@
     <h3 class="shadow"><i class="fas fa-shopping-cart p-2"></i>Place Order</h3>
     <h5 class="fs-6 fw-normal ">Home > Orders</h5>
     <hr>
-    <div class="col-3 shadow-lg  mb-4  bg-body border rounded  border-2 me-5 mt-3 p-3">
+    <div class="col-3 shadow-lg  mb-4  bg-body border rounded  border-2 me-5 mt-3 p-3 ">
             <form class="row g-3">
                 <div id="invoiceFormHeader" class="col-12 text-white text-center p-2 fw-bolder fs-5 mt-2 rounded">Invoice Details</div>
                 <div class="col-md-6">
@@ -179,8 +179,8 @@
             </form>
         </div>
     <div class=" shadow-lg ">
-        <table class="table table-bordered table-hover m-0">
-            <thead id="tHead" class="text-white">
+        <table class="table table-bordered table-hover m-0 ">
+            <thead id="tHead" class="text-white bg-primary ">
             <tr>
                 <th>Item Code</th>
                 <th>Item Name</th>
@@ -189,7 +189,14 @@
                 <th>Total</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody class="table-primary">
+            <tr class="table-hover fw-light">
+                <th>P001</th>
+                <th>Keerisamba 5kg</th>
+                <th>525.00</th>
+                <th>2</th>
+                <th>1050</th>
+            </tr>
             <tr class="table-hover fw-light">
                 <th>P001</th>
                 <th>Keerisamba 5kg</th>
