@@ -33,30 +33,16 @@
       <div class="collapse navbar-collapse text-primary" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item  ">
-            <a class="nav-link text-primary" href="#">Home</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link text-primary " href="index.html">Orders</a>
+            <a class="nav-link text-primary" href="dashboard.html">Dashboard</a>
           </li>
           <li class="nav-item ">
             <a class="nav-link text-primary " href="manageCustomer.html">Customers</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link text-primary" href="manageStore.html">Items</a>
+            <a class="nav-link text-primary " href="manageStore.html">Items</a>
           </li>
-          <li class="nav-item dropdown ">
-            <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button"
-               data-bs-toggle="dropdown" aria-expanded="false">
-              Others
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+          <li class="nav-item ">
+            <a class="nav-link text-primary" href="orderDetail.html">Orders</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -69,43 +55,65 @@
 </section>
 <section class="container-fluid pe-5 ps-5">
   <section class="row pe-4 ps-4 ">
-    <h3 class="shadow"><i class="fas fa-users p-2"></i>Customer</h3>
-    <h5 class="fs-6 fw-normal ">Home > Customer</h5>
-    <hr>
+    <h4 class="shadow"><i class="fas fa-users p-2"></i>Customer</h4>
     <div class="col-4 shadow-lg  mb-4  bg-body border rounded  border-2 me-5 mt-3 p-3 ">
       <form class="row g-3">
         <div id="searchFormHeader" class="col-12 text-white text-center p-2 fw-bolder fs-5 mt-2 rounded">Search Customer</div>
         <div class="col-md-12">
-          <input type="email" class="form-control" id="inputNameNICTp" placeholder="Input Name/NIC/Tp Here">
+          <input type="email" class="form-control" id="inputNameNICTp" placeholder="Input Name/NIC/Tp here">
         </div>
         <div class="col-2 me-3" >
           <button id="purchaseBtn" class="btn btn me-2 text-white fw-bolder" type="button">Search</button>
         </div>
-        <div class="col-4">
-          <select id="inputCustomer" class="form-select">
-            <option selected>Name</option>
-            <option>Hansi</option>
-          </select>
-        </div>
       </form>
     </div>
-    <div class="col-4">
-      <button class="btn btn fw-bolder btn-primary me-2 mt-4" type="button">New Customer</button>
-      <button class="btn btn fw-bolder btn-warning text-white me-2 mt-4" type="button">View All Customers</button>
+    <div class="col-2">
+      <button type="button" class="col-12 btn btn btn-primary fw-bolder mt-4 shadow-lg" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+        Add New Customer
+      </button>
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-primary" id="exampleModalLabel1">Add New Customer</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3">
+                <div class="col-md-12">
+                  <label for="inputID" class="form-label">Customer ID :</label>
+                  <input type="password" class="form-control" id="inputID" placeholder="C001">
+                </div>
+                <div class="col-12">
+                  <label for="inputName" class="form-label">Name :</label>
+                  <input type="email" class="form-control" id="inputName" placeholder="Hansi">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address :</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Matara">
+                </div>
+                <div class="col-12">
+                  <label for="inputTelephone" class="form-label">Telephone :</label>
+                  <input type="text" class="form-control" id="inputTelephone" placeholder="0711757824">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="col-2 btn btn-danger " data-bs-dismiss="modal">Clear</button>
+              <button type="button" class="col-3 btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div>
-      <button class="btn btn btn-danger me-2 mb-4 fw-bolder" type="button">Delete</button>
-      <button class="btn btn btn-primary me-2 mb-4 fw-bolder" type="button">Details</button>
-      <button id="clearBtn" class="btn btn text-white bg-warning fw-bolder me-2 mb-4" type="button">Clear</button>
-    </div>
-    <div class=" shadow-lg">
-      <table class="table table-bordered table-hover m-0">
+      <table class="table table-borderless table-hover m-0">
         <thead id="tHead" class="text-white bg-primary">
         <tr>
-          <th>Customer Name</th>
-          <th>Age</th>
-          <th>Tp</th>
-          <th>Salary</th>
+          <th>Customer ID</th>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Telephone</th>
+          <th>Option</th>
         </tr>
         </thead>
         <tbody class="table-primary">
@@ -113,29 +121,52 @@
           <th>C001</th>
           <th>Hansi</th>
           <th>Matara</th>
-          <th>100000.00</th>
+          <th>0711757824</th>
+          <th>
+            <div>
+              <button  type="submit" class="btn btn-sm btn-success text-white  ">Update</button>
+              <button  type="submit" class="btn btn-sm btn-danger text-white  ">Delete</button>
+            </div>
+          </th>
         </tr>
         <tr class="table-hover fw-light">
           <th>C002</th>
           <th>Nirasha</th>
           <th>Galle</th>
-          <th>200000.00</th>
+          <th>0711757824</th>
+          <th>
+            <div>
+              <button  type="submit" class="btn btn-sm btn-success text-white  ">Update</button>
+              <button  type="submit" class="btn btn-sm btn-danger text-white  ">Delete</button>
+            </div>
+          </th>
         </tr>
         <tr class="table-hover fw-light">
           <th>C003</th>
           <th>Chamodi</th>
           <th>Galle</th>
-          <th>100000.00</th>
+          <th>0711757824</th>
+          <th>
+            <div>
+              <button  type="submit" class="btn btn-sm btn-success text-white  ">Update</button>
+              <button  type="submit" class="btn btn-sm btn-danger text-white  ">Delete</button>
+            </div>
+          </th>
         </tr>
         <tr class="table-hover fw-light">
           <th>C004</th>
           <th>Milasha</th>
           <th>Mirissa</th>
-          <th>200000.00</th>
+          <th>0711757824</th>
+          <th>
+            <div>
+              <button  type="submit" class="btn btn-sm btn-success text-white  ">Update</button>
+              <button  type="submit" class="btn btn-sm btn-danger text-white  ">Delete</button>
+            </div>
+          </th>
         </tr>
         </tbody>
       </table>
-    </div>
   </section>
 </section>
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
