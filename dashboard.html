@@ -10,6 +10,19 @@
   <meta name="theme-color" content="#3498db">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/Fonts/css/all.css">
+  <style>
+    #content{
+      align-content: center;
+      height: 400px;
+      width: 1000px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+    }
+  </style>
 </head>
 <body>
 <section>
@@ -23,11 +36,19 @@
   </nav>
 </section>
 <section class="container-fluid">
-  <section>
-  <div>
-    <button  id="purchaseBtn" type="submit" class="btn btn bg-primary text-white fw-bolder">Add New Customer</button>
+  <section id="content" class="row border rounded border-primary ">
+  <div class="col-4 border border-primary ">
+    <button  type="submit" class="btn btn bg-primary text-white fw-bolder">Add New Customer</button>
     <button  type="submit" class="btn btn text-white bg-warning fw-bolder">Update/ View Details</button>
   </div>
+    <div class="col-4 border border-primary ">
+      <button  type="submit" class="btn btn bg-primary text-white fw-bolder">Add New Item</button>
+      <button  type="submit" class="btn btn text-white bg-warning fw-bolder">Update/ View Details</button>
+    </div>
+    <div class="col-4 border border-primary ">
+      <button  id="purchaseBtn" type="submit" class="btn btn bg-primary text-white fw-bolder">Purchase Order</button>
+      <button  type="submit" class="btn btn text-white bg-warning fw-bolder">Update/ View Details</button>
+    </div>
   </section>
 </section>
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
