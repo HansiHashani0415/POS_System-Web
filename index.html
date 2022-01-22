@@ -94,20 +94,20 @@
                 <label for="inputItemCode" class="form-label">Item Code :</label>
                 <input type="password" class="form-control" id="inputItemCode" placeholder="Search Item Code Here">
             </div>
-            <div class="col-5">
+            <div class="col-7">
                 <label for="inputItemName" class="form-label">Description :</label>
                 <input type="email" class="form-control" id="inputItemName" >
             </div>
-            <div class="col-4">
-                <label for="inputPrice" class="form-label">Price :</label>
-                <input type="text" class="form-control" id="inputPrice" placeholder="525.00">
+            <div class="col-5">
+                <label for="inputPrice" class="form-label">Unit Price :</label>
+                <input type="text" class="form-control" id="inputPrice" >
             </div>
-            <div class="col-3">
-                <label for="inputQtyOnHand" class="form-label">QtyOnH :</label>
-                <input type="text" class="form-control" id="inputQtyOnHand" placeholder="200">
+            <div class="col-6">
+                <label for="inputQtyOnHand" class="form-label">Qty On Hand :</label>
+                <input type="text" class="form-control" id="inputQtyOnHand" >
             </div>
-            <div class="col-12">
-                <label for="inputOrderQty" class="form-label">Order Qty :</label>
+            <div class="col-6">
+                <label for="inputOrderQty" class="form-label">Enter Order Qty :</label>
                 <input type="text" class="form-control" id="inputOrderQty" placeholder="2">
             </div>
             <div class="col-12" >
@@ -117,10 +117,6 @@
     </div>
     <div class="col-3 shadow-lg p-3 mb-4  bg-body border rounded  border-2 mt-3  ">
             <form class="row g-3">
-                <div>
-                    <h3 class="text-primary">Total : 1050 Rs/=</h3>
-                    <h3 class="text-danger">SubTotal : 945 Rs/=</h3>
-                </div>
                 <div class="col-md-6">
                     <label for="inputCash" class="form-label">Cash</label>
                     <input type="email" class="form-control" id="inputCash" placeholder="5000">
@@ -133,8 +129,13 @@
                     <label for="inputBalance" class="form-label">Balance</label>
                     <input type="text" class="form-control" id="inputBalance" placeholder="4055">
                 </div>
-                <div class="col-12 mx-auto" style="width: 100px">
-                    <button  id="purchaseBtn" type="submit" class="btn btn-sm text-white fw-bolder">Purchase</button>
+                <div>
+                    <h3 class="text-primary">SubTotal : 1050 Rs/=</h3>
+                    <h3 class="text-danger">Total : 945 Rs/=</h3>
+                </div>
+                <div class="col-12 mx-auto">
+                    <button  id="purchaseBtn" type="submit" class="btn btn-sm text-white fw-bolder">Confirm Order</button>
+                    <button   type="submit" class="btn btn-sm text-white btn-danger fw-bolder">Cancel Order</button>
                 </div>
             </form>
         </div>
@@ -143,26 +144,39 @@
             <thead id="tHead" class="text-white bg-primary ">
             <tr>
                 <th>Item Code</th>
-                <th>Item Name</th>
-                <th>Price</th>
+                <th>Description</th>
+                <th>Unit Price</th>
                 <th>Quantity</th>
                 <th>Total</th>
+                <th>Option</th>
             </tr>
             </thead>
             <tbody class="table-primary">
             <tr class="table-hover fw-light">
-                <th>P001</th>
-                <th>Keerisamba 5kg</th>
-                <th>525.00</th>
+                <th>I001</th>
+                <th>Rice</th>
+                <th>150.00</th>
                 <th>2</th>
-                <th>1050</th>
+                <th>300.00</th>
+                <th>
+                    <div>
+                        <button  type="submit" class="btn btn-sm btn-success text-white  ">Update</button>
+                        <button  type="submit" class="btn btn-sm btn-danger text-white  ">Remove</button>
+                    </div>
+                </th>
             </tr>
             <tr class="table-hover fw-light">
-                <th>P001</th>
-                <th>Keerisamba 5kg</th>
-                <th>525.00</th>
+                <th>I001</th>
+                <th>Rice</th>
+                <th>150.00</th>
                 <th>2</th>
-                <th>1050</th>
+                <th>300.00</th>
+                <th>
+                    <div>
+                        <button  type="submit" class="btn btn-sm btn-success text-white  ">Update</button>
+                        <button  type="submit" class="btn btn-sm btn-danger text-white  ">Remove</button>
+                    </div>
+                </th>
             </tr>
             </tbody>
         </table>
