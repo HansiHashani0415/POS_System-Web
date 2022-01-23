@@ -29,8 +29,10 @@
 ![Screenshot](assets/images/dashboard.jpg)
 #### Add New Customer Form
 ![Screenshot](assets/images/addNewCustomer.jpg)
-#### Customer Details Form
+#### Customer Details Page
 ![Screenshot](assets/images/customerDetails.jpg)
 #### Add New Item Form
 ![Screenshot](assets/images/addNewItem.jpg)
+#### Item Details Page
+![Screenshot](assets/images/itemDetails.jpg)
 
