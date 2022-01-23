@@ -35,4 +35,6 @@
 ![Screenshot](assets/images/addNewItem.jpg)
 #### Item Details Page
 ![Screenshot](assets/images/itemDetails.jpg)
+#### Purchase Order Form
+![Screenshot](assets/images/placeOrder.jpg)
 
