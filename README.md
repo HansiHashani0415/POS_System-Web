@@ -31,4 +31,6 @@
 ![Screenshot](assets/images/addNewCustomer.jpg)
 #### Customer Details Form
 ![Screenshot](assets/images/customerDetails.jpg)
+#### Add New Item Form
+![Screenshot](assets/images/addNewItem.jpg)
 
