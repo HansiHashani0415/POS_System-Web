@@ -25,3 +25,5 @@
 ### Screenshots of the Application
 #### LogIn Page
 ![Screenshot](assets/images/logInPage.jpg)
+#### Dashboard
+![Screenshot](assets/images/dashboard.jpg)
