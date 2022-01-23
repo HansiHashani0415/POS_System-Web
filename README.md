@@ -23,18 +23,20 @@
 #### Frameworks
 - Bootstrap
 ### Screenshots of the Application
-#### LogIn Page
+#### LogIn Form
 ![Screenshot](assets/images/logInPage.jpg)
 #### Dashboard
 ![Screenshot](assets/images/dashboard.jpg)
 #### Add New Customer Form
 ![Screenshot](assets/images/addNewCustomer.jpg)
-#### Customer Details Page
+#### Customer Details Form
 ![Screenshot](assets/images/customerDetails.jpg)
 #### Add New Item Form
 ![Screenshot](assets/images/addNewItem.jpg)
-#### Item Details Page
+#### Item Details Form
 ![Screenshot](assets/images/itemDetails.jpg)
 #### Purchase Order Form
 ![Screenshot](assets/images/placeOrder.jpg)
+#### Order Details Form
+![Screenshot](assets/images/orderDetails.jpg)
 
