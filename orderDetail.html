@@ -17,6 +17,15 @@
     .nav-item:hover{
       font-weight: bolder;
     }
+    #signUpBtn{
+      position: absolute;
+      right: 100px;
+      top: 0;
+      bottom: 0;
+      width: 70px;
+      height: 30px;
+      margin: auto;
+    }
   </style>
 </head>
 <body>
@@ -46,7 +55,45 @@
           </li>
         </ul>
         <form class="d-flex">
-          <button class="btn btn-sm btn-primary me-2" type="button">Sign Up</button>
+          <div>
+            <button id="signUpBtn" type="button" class="col-12 btn btn-sm  btn-primary shadow-lg" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              Sign Up
+            </button>
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-primary" id="exampleModalLabel2">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="row g-3">
+                      <div class="col-md-12">
+                        <label for="inputUserID" class="form-label text-dark">User ID :</label>
+                        <input type="text" class="form-control" id="inputUserID" placeholder="U001">
+                      </div>
+                      <div class="col-12">
+                        <label for="inputUserName" class="form-label text-dark">Usename :</label>
+                        <input type="email" class="form-control" id="inputUserName" placeholder="Hansi">
+                      </div>
+                      <div class="col-12">
+                        <label for="inputEmail" class="form-label text-dark">E-mail :</label>
+                        <input type="text" class="form-control" id="inputEmail" placeholder="hansi@gmail.com">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="inputPw" class="form-label text-dark">Password :</label>
+                        <input type="password" class="form-control" id="inputPw" placeholder="****">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="col-2 btn btn-danger " data-bs-dismiss="modal">Clear</button>
+                    <button type="button" class="col-3 btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <button class="btn btn-sm btn-danger me-3" type="button"><a href="index.html" class="text-decoration-none text-white">Log Out</a></button>
         </form>
       </div>
@@ -85,7 +132,29 @@
           <th>
             <div>
               <button  type="submit" class="btn btn-sm btn-success text-white  ">View Details</button>
-              <button  type="submit" class="btn btn-sm btn-danger text-white  ">Delete</button>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Delete
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Confirmation Alert</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Are you sure whether you want to delete this record?
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Yes</button>
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">No</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </th>
         </tr>
@@ -116,11 +185,11 @@
         <div id="invoiceFormHeader" class="col-12 text-white text-center p-2 fw-bolder fs-5 mt-2 rounded ">Customer Details</div>
         <div class="col-md-12">
           <label for="inputOrderID" class="form-label">Customer ID :</label>
-          <input type="email" class="form-control" id="inputOrderID">
+          <input type="text" class="form-control" id="inputOrderID">
         </div>
         <div class="col-md-12">
           <label for="inputDate" class="form-label">Name :</label>
-          <input type="password" class="form-control" id="inputDate" >
+          <input type="text" class="form-control" id="inputDate" >
         </div>
         <div class="col-12">
           <label for="inputAddress" class="form-label">Address :</label>
