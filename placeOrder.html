@@ -64,15 +64,15 @@
                 <div id="invoiceFormHeader" class="col-12 text-white text-center p-2 fw-bolder fs-5 mt-2 rounded ">Customer Details</div>
                 <div class="col-md-12">
                     <label for="inputOrderID" class="form-label">Cusomer ID :</label>
-                    <input type="email" class="form-control" id="inputOrderID" placeholder="C001">
+                    <input type="text" class="form-control" id="inputOrderID" placeholder="C001">
                 </div>
                 <div class="col-md-12">
-                    <label for="inputDate" class="form-label">Name :</label>
-                    <input type="password" class="form-control" id="inputDate" >
+                    <label for="inputName" class="form-label">Name :</label>
+                    <input type="text" class="form-control" id="inputName" >
                 </div>
                 <div class="col-12">
                     <label for="inputAddress" class="form-label">Address :</label>
-                    <input type="password" class="form-control" id="inputAddress" >
+                    <input type="text" class="form-control" id="inputAddress" >
 
                 </div>
                 <div class="col-12">
@@ -95,11 +95,11 @@
             </div>
             <div class="col-md-6">
                 <label for="inputItemCode" class="form-label">Item Code :</label>
-                <input type="password" class="form-control" id="inputItemCode" placeholder="Search Item Code Here">
+                <input type="text" class="form-control" id="inputItemCode" placeholder="Search Item Code Here">
             </div>
             <div class="col-7">
                 <label for="inputItemName" class="form-label">Description :</label>
-                <input type="email" class="form-control" id="inputItemName" >
+                <input type="text" class="form-control" id="inputItemName" >
             </div>
             <div class="col-5">
                 <label for="inputPrice" class="form-label">Unit Price :</label>
@@ -111,7 +111,7 @@
             </div>
             <div class="col-6">
                 <label for="inputOrderQty" class="form-label">Enter Order Qty :</label>
-                <input type="text" class="form-control" id="inputOrderQty" placeholder="2">
+                <input type="number" class="form-control" id="inputOrderQty" placeholder="2">
             </div>
             <div class="col-12" >
                 <button id="addBtn" class="btn btn-sm text-white fw-bolder me-2" type="button">Add Item</button>
@@ -120,13 +120,21 @@
     </div>
     <div class="col-3 shadow-lg p-3 mb-4  bg-body border rounded  border-2 mt-3  ">
             <form class="row g-3">
+                <div class="col-md-7">
+                    <label for="inputDate" class="form-label">Date</label>
+                    <input type="date" class="form-control" id="inputDate" >
+                </div>
+                <div class="col-md-5">
+                    <label for="inputTime" class="form-label">Time</label>
+                    <input type="time" class="form-control" id="inputTime" >
+                </div>
                 <div class="col-md-6">
                     <label for="inputCash" class="form-label">Cash</label>
-                    <input type="email" class="form-control" id="inputCash" placeholder="5000">
+                    <input type="text" class="form-control" id="inputCash" placeholder="5000">
                 </div>
                 <div class="col-md-6">
                     <label for="inputDiscount" class="form-label">Discount</label>
-                    <input type="password" class="form-control" id="inputDiscount" placeholder="10">
+                    <input type="text" class="form-control" id="inputDiscount" placeholder="10">
                 </div>
                 <div class="col-12">
                     <label for="inputBalance" class="form-label">Balance</label>
