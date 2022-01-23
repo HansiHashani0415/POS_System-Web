@@ -20,6 +20,15 @@
     .nav-item:hover{
       font-weight: bolder;
     }
+    #signUpBtn{
+      position: absolute;
+      right: 100px;
+      top: 0;
+      bottom: 0;
+      width: 70px;
+      height: 30px;
+      margin: auto;
+    }
   </style>
 </head>
 <body>
@@ -49,7 +58,45 @@
           </li>
         </ul>
         <form class="d-flex">
-          <button class="btn btn-sm btn-primary me-2" type="button">Sign Up</button>
+          <div>
+            <button id="signUpBtn" type="button" class="col-12 btn btn-sm  btn-primary shadow-lg" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              Sign Up
+            </button>
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-primary" id="exampleModalLabel2">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="row g-3">
+                      <div class="col-md-12">
+                        <label for="inputUserID" class="form-label text-dark">User ID :</label>
+                        <input type="text" class="form-control" id="inputUserID" placeholder="U001">
+                      </div>
+                      <div class="col-12">
+                        <label for="inputUserName" class="form-label text-dark">Usename :</label>
+                        <input type="email" class="form-control" id="inputUserName" placeholder="Hansi">
+                      </div>
+                      <div class="col-12">
+                        <label for="inputEmail" class="form-label text-dark">E-mail :</label>
+                        <input type="text" class="form-control" id="inputEmail" placeholder="hansi@gmail.com">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="inputPw" class="form-label text-dark">Password :</label>
+                        <input type="password" class="form-control" id="inputPw" placeholder="U001">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="col-2 btn btn-danger " data-bs-dismiss="modal">Clear</button>
+                    <button type="button" class="col-3 btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <button class="btn btn-sm btn-danger me-3" type="button"><a href="index.html" class="text-decoration-none text-white">Log Out</a></button>
         </form>
       </div>
