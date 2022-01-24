@@ -21,6 +21,7 @@
 #### Languages
 - Html
 - CSS
+- JavaScript
 #### Frameworks
 - Bootstrap
 ### Screenshots of the Application
